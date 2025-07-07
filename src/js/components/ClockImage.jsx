@@ -1,12 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock as farClock } from "@fortawesome/free-regular-svg-icons";
 
-//create your first component
-const ClockImage = () => {
-  return (
-    <div className="text-center">
-      <FontAwesomeIcon icon={faClock} />
-    </div>
-  );
+const ClockImage = (props) => {
+  return <FontAwesomeIcon icon={farClock} {...props} />;
 };
 
 export default ClockImage;
